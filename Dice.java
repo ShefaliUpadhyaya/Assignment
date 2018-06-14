@@ -8,6 +8,11 @@ public class Dice {
 	String rollDice() {
 		number = (int)(1 + Math.random()*(size));
 		String value = null;
+		if(size==2) {
+			if(number==1)
+				return "head";
+			else return "tail";
+		}
 		switch(number) {
 		case 1: value = "one";
 						break;
